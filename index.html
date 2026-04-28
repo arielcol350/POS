@@ -380,7 +380,7 @@
 <!-- GOOGLE SCRIPT URL SETTINGS -->
 <div class="settings-bar">
   <span>URL Script:</span>
-  <input type="url" class="settings-url" id="scriptUrl" placeholder="https://script.google.com/macros/s/.../exec" />
+  <input type="url" class="settings-url" id="scriptUrl" placeholder="https://script.google.com/macros/s/AKfycbxMpXuA2DvfqGiLfquZt3NoGxe9jOx33EF0nZTr54eUYe848-aAw5Irjw5lxlSmdXfy/exec" />
   <button class="save-url-btn" onclick="saveScriptUrl()">Guardar</button>
 </div>
 
@@ -497,7 +497,7 @@ const MENU = {
   'Latte Frío':          { type:'drink', espresso:3,    instantaneo:2 },
   'Caramel Macchiato':   { type:'drink', espresso:3,    instantaneo:2 },
   'Capuchino Frío':      { type:'drink', espresso:3,    instantaneo:2 },
-  'Capuchino Caliente':  { type:'drink', espresso:3,    instantaneo:2 },
+  'Capuchino Caliente':  { type:'drink', espresso:3,    instantaneo:null },
   'Café Instantáneo':    { type:'drink', espresso:null, instantaneo:0.35 },
   'Donas':               { type:'dessert', price:1.00 },
   'Pan de Banano':       { type:'dessert', price:0.75 },
@@ -508,7 +508,7 @@ let cart = [];
 let currentProduct = null;
 
 const STORAGE_KEY = 'aryscafe_cart';
-const SCRIPT_URL_KEY = 'aryscafe_script_url';
+const SCRIPT_URL_KEY = 'https://script.google.com/macros/s/AKfycbxMpXuA2DvfqGiLfquZt3NoGxe9jOx33EF0nZTr54eUYe848-aAw5Irjw5lxlSmdXfy/exec';
 
 // ── PERSISTENCE ────────────────────────────────────────
 function saveCart() {
